@@ -10,7 +10,6 @@ import { sortByDate, sortByValue } from '../utils'
 export default function Blog({ posts }) {
     const [value, setValue] = useState("");
     const sortedPosts = [];
-    console.log(value)
 
     if (value) {
         sortedPosts.push(sortByValue(posts, value))
@@ -19,13 +18,11 @@ export default function Blog({ posts }) {
     } else {
         sortedPosts.push(posts)
     }
-    console.log(posts)
-    console.log(sortedPosts)
 
     return (
         <div className="home-container">
             <title>Blog - Wildcard Portal</title>
-            <Header />
+            {/* <Header /> */}
             <div className="blog_container">
                 <div className="posts_list">
                     {sortedPosts[0].map((post, index) => {

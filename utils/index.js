@@ -7,7 +7,6 @@ export const orderReleasesByDate = (a, b) => {
 }
 
 export const sortByValue = (array, value) => {
-    console.log('ARRAY ', array, ' VALUE ', value)
     const posts = [];
     if (value != 'All') { 
         array.map(post => {
@@ -19,6 +18,5 @@ export const sortByValue = (array, value) => {
             posts.push(post)
         })
     }
-    console.log('POSTS ', posts)
     return posts;
 }

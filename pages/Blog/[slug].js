@@ -10,7 +10,6 @@ import { sortByValue } from '../../utils'
 export default function PostPage({ frontmatter: {title, date, reading_time}, slug, content, posts }) {
     const [value, setValue] = useState("");
     const sortedPosts = [];
-    console.log(value);
     if (value) {
         sortedPosts.push(sortByValue(posts, value))
     } else {

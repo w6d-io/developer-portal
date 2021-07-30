@@ -3,7 +3,7 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import BlogCategories from './components/BlogCategories'
-import Header from './components/Header'
+// import Header from './components/Header'
 import Link from 'next/link'
 import { sortByDate, sortByValue } from '../utils'
 

@@ -1,6 +1,6 @@
 ---
 title: 'Wildcard officially becomes owner and collaborator of Babelfish'
-date: 'April 14 2021'
+date: 'April 9 2021'
 reading_time: '2 min read'
 post_logo: 'https://images-platform.99static.com/ZVAAzy__FeP9nrM-42Sbj75AjpI=/0x0:1001x1001/500x500/top/smart/99designs-contests-attachments/84/84527/attachment_84527709'
 preview: 'Babelfish is a self-hosted server for source-code parsing: it has the power to parse all kinds of file, in any supported language, extracting an Abstract Syntax Tree and converting it into a Universal Abstract Syntax Tree (UAST). This UAST enables further analysis and transformations with either the included tools or your own tools by providing a standard open format.'

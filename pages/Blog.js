@@ -25,7 +25,7 @@ export default function Blog({ posts }) {
     return (
         <div className="home-container">
             <title>Blog - Wildcard Portal</title>
-            <Header />
+            {/* <Header /> */}
             <div className="blog_container">
                 <div className="posts_list">
                     {sortedPosts[0].map((post, index) => {

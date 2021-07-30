@@ -8,7 +8,7 @@ export default function Header() {
     const menuLinks = [
         {
             title: "Blog",
-            to: "blog",
+            to: "",
         }
     ]
     
@@ -25,7 +25,7 @@ export default function Header() {
                         <FiSearch />
                         <div className="vl"></div>
                         {menuLinks.map(item => {
-                            return <Link key={item.title} href={`../developer-portal/${item.title}`} passHref><a className="menu-item">{item.title}</a></Link>
+                            return <Link key={item.title} href={`../developer-portal/${item.to}`} passHref><a className="menu-item">{item.title}</a></Link>
                         })}
                     </TopBarLinkContainer>
                 </TopBarSection>

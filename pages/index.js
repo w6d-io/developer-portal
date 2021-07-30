@@ -1,0 +1,18 @@
+import React from 'react'
+import { ContainerVertical } from '@duik/it'
+import '@duik/it/dist/styles.css'
+import { Route, Switch, BrowserRouter } from 'react-router-dom'
+import Header from './components/Header'
+import Home from './Home'
+import Documentation from './Blog'
+
+export default function Layout() {
+  return (
+    <div className="home-container">
+      <Header/>
+      <ContainerVertical>
+        <Home />
+      </ContainerVertical>
+    </div>
+  )
+}

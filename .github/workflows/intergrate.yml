@@ -29,9 +29,9 @@ jobs:
         env:
             NODE_ENV: production
         run: |
-          npm install
-          npm run build
-          npm run export
+          yarn install
+          yarn run build
+          yarn run export
           cd out
           git init
           git config user.name "GitHub Actions"

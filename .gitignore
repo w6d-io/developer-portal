@@ -1,6 +1,6 @@
 /out/
 
-.next
+.next/
 
 .env
 .env.build

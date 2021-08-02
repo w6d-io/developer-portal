@@ -32,7 +32,7 @@ export default function Blog({ posts }) {
                                     <img className="posts_previewimg" src={post.frontmatter.post_logo} />
                                 </div>
                                 <div>
-                                    <Link href={`developer-portal/Blog/${post.slug}`}><a className="posts_title">{post.frontmatter.title}</a></Link>
+                                    <Link href={`/Blog/${post.slug}`}><a className="posts_title">{post.frontmatter.title}</a></Link>
                                     <p className="posts_previewtext-date">{post.frontmatter.date} • {post.frontmatter.reading_time}</p>
                                     <p className="posts_previewtext">{post.frontmatter.preview}</p>
                                     {post.frontmatter.preview ? <Link href={`/developer-portal/Blog/${post.slug}`}><a className="posts_seemore">read more</a></Link> : ''}

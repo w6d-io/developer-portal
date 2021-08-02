@@ -17,7 +17,7 @@ export default function Header() {
             <TopBar className="box">
                 <TopBarSection>
                     <TopBarTitle>
-                        <TopBarLink href="/"><Avatar imgUrl="https://media-exp0.licdn.com/dms/image/C4D0BAQHca9scvFTn_g/company-logo_200_200/0/1575039115252?e=2159024400&v=beta&t=lhQfV9RKT_iydx97uugwZtvsL_zgPoTU_fxFC11nkaI" name={<h2><b>Wildcard</b><b className="header-secondary">portal</b></h2>} pill={<span>O</span>} /></TopBarLink>
+                        <TopBarLink href="/"><Avatar imgUrl="/logo.png" name={<h2><b>Wildcard</b><b className="header-secondary">portal</b></h2>} pill={<span>O</span>} /></TopBarLink>
                     </TopBarTitle>
                 </TopBarSection>
                 <TopBarSection className="menu">

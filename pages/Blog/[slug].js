@@ -39,7 +39,7 @@ export async function getStaticPaths() {
     const files = fs.readdirSync(path.join('posts'));
     const paths = files.map(filename => ({
         params: {
-            slug: filename.replace('.mdx', '')
+            slug: filename.replace('.md', '')
         }
     }))
 
@@ -51,10 +51,10 @@ export async function getStaticPaths() {
 
 export async function getStaticProps({params: {slug}}) {
     const files = fs.readdirSync(path.join('posts'));
-    const markdownWithMeta = fs.readFileSync(path.join('posts', slug + '.mdx'), 'utf-8')
+    const markdownWithMeta = fs.readFileSync(path.join('posts', slug + '.md'), 'utf-8')
     const {data: frontmatter, content} = matter(markdownWithMeta)
     const posts = files.map(filename => {
-        const slug = filename.replace('.mdx', '')
+        const slug = filename.replace('.md', '')
         const markdownWithMeta = fs.readFileSync(path.join('posts', filename), 'utf-8')
         const { data: frontmatter } = matter(markdownWithMeta)
 

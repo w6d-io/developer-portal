@@ -8,7 +8,7 @@ RUN yarn install
 COPY . ./
 # BUILD COMMAND
 RUN yarn run build
-RUN yarn run expose
+RUN yarn run export
 
 
 FROM nginx

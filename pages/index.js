@@ -1,15 +1,15 @@
 import React from 'react'
 import { ContainerVertical } from '@duik/it'
-import '@duik/it/dist/styles.css'
 import { Route, Switch, BrowserRouter } from 'react-router-dom'
 import Header from './components/Header'
-// import Home from './Home'
+import Home from './Home'
 import Blog from './Blog'
 /* Blog as Homepage START */
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import { sortByDate } from '../utils'
+import Link from 'next/link'
 /* Blog as Homepage END */
 
 export default function Layout({posts}) {
@@ -17,7 +17,7 @@ export default function Layout({posts}) {
     <div className="home-container">
       <Header/>
       <ContainerVertical>
-        <Blog posts={posts}/>
+        <Blog posts={posts} />
       </ContainerVertical>
     </div>
   )

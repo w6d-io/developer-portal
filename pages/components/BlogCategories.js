@@ -12,7 +12,7 @@ function OwnNavLink({ leftElement, title, rightElement }) {
     )
 }
 
-function Categories({ posts, changeValue }) {
+function Categories({ posts, changeValue, ...props }) {
     const getCategories = [];
     posts.map(post => {
         getCategories.push(post.frontmatter.category)
@@ -29,7 +29,7 @@ function Categories({ posts, changeValue }) {
     })
 
     return (
-        <div className="categories_container">
+        <div {...props}>
             <TopBarTitle className="categories_container_title">Categories</TopBarTitle>
             <NavLink className="categories_container_item" onClick={() => changeValue('All')}>All</NavLink>
             {structuredArr.map((post, index) => {
@@ -46,7 +46,7 @@ function Categories({ posts, changeValue }) {
     )
 }
 
-function LatestReleases({ posts }) {
+function LatestReleases({ posts, ...props }) {
     const getReleases = [];
     posts.map(post => {
         getReleases.push(post.frontmatter)
@@ -54,7 +54,7 @@ function LatestReleases({ posts }) {
     getReleases.sort(orderReleasesByDate);
 
     return (
-        <div className="categories_container">
+        <div {...props} >
             <TopBarTitle className="categories_container_title">Latest Releases</TopBarTitle>
             {getReleases.map((release, index) => {
                 return <OwnNavLink
@@ -70,9 +70,9 @@ function LatestReleases({ posts }) {
 
 export default function BlogCategories({ posts, changeValue }) {
     return (
-        <div>
-            <Categories posts={posts} changeValue={changeValue}/>
-            <LatestReleases posts={posts} />
+        <div className="flex flex-col lg:flex-col justify-around p-5 lg:p-0 md:flex-row sm:flex-col">
+            <Categories className="categories_container m-0 flex-grow md:mr-2 lg:m-0" posts={posts} changeValue={changeValue}/>
+            <LatestReleases className="categories_container m-0 flex-grow md:ml-2 lg:m-0 lg:mt-5" posts={posts} />
         </div>
     )
 }

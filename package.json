@@ -9,20 +9,23 @@
     "deploy": "rm -rf node_modules/.cache && next build && next export && touch out/.nojekyll && git add out/ && git commit -m \"Deploy Next.js to gh-pages\" && git subtree push --prefix out origin gh-pages"
   },
   "dependencies": {
-    "classnames": "^2.3.1",
     "@duik/it": "^0.6.0",
+    "autoprefixer": "^10.3.1",
+    "classnames": "^2.3.1",
     "eslint": "^7.32.0",
     "eslint-config-next": "^11.0.1",
     "gray-matter": "^4.0.3",
     "marked": "^2.1.3",
     "next": "latest",
+    "postcss": "^8.3.6",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.2.0",
     "react-is": "^17.0.2",
     "react-router-dom": "^5.2.0",
     "react-transition-group": "^4.4.2",
-    "sass": "^1.35.1"
+    "sass": "^1.35.1",
+    "tailwindcss": "^2.2.7"
   },
   "devDependencies": {
     "babel-plugin-transform-define": "^1.3.0"

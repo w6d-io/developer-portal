@@ -2,7 +2,7 @@
 title: 'A quick introduction to CI/CD.'
 date: 'July 29 2021'
 reading_time: '5 min read'
-post_logo: 'https://media-exp1.licdn.com/dms/image/C4D0BAQHca9scvFTn_g/company-logo_200_200/0/1575039115252?e=2159024400&v=beta&t=lhQfV9RKT_iydx97uugwZtvsL_zgPoTU_fxFC11nkaI'
+post_logo: 'https://w6d-public.s3.eu-west-3.amazonaws.com/pictures/favicon.png'
 preview: 'CI/CD is one of the pillars of modern cloud native software development. It improves your software products and makes its development more effective and cheaper This article discusses CI/CD and the different tools you can use to implement it.'
 category: 'Advanced Techniques'
 app: 'CI/CD'

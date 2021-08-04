@@ -3,9 +3,10 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import BlogCategories from "./components/BlogCategories";
-// import Header from './components/Header'
+import Header from './components/Header'
 import Link from "next/link";
 import { sortByDate, sortByValue } from "../utils";
+import Image from 'next/image'
 
 export default function Blog({ posts }) {
   const [value, setValue] = useState("");
@@ -21,7 +22,6 @@ export default function Blog({ posts }) {
 
   return (
     <div className="home-container flex flex-1 justify-center">
-      <title>Blog - Wildcard Portal</title>
       {/* <Header /> */}
       <div className="flex flex-col p-5 lg:flex-row max-w-screen-xl">
         <div className="flex-2 px-5">
@@ -30,6 +30,8 @@ export default function Blog({ posts }) {
               <div key={index} className="posts_preview flex flex-row">
                 <div className="flex-0 px-3 w-1/4">
                   <img
+                    layout='fill'
+                    alt={post.frontmatter.title}
                     className="posts_previewimg"
                     src={post.frontmatter.post_logo}
                   />
@@ -46,7 +48,7 @@ export default function Blog({ posts }) {
                   </p>
                   {post.frontmatter.preview ? (
                     <Link href={`/Blog/${post.slug}`}>
-                      <a className="posts_seemore">read more</a>
+                      <a className="posts_seemore">read this article</a>
                     </Link>
                   ) : (
                     ""

@@ -5,5 +5,7 @@
 const isProd = process.env.NODE_ENV === 'production'
 
 module.exports = {
-  assetPrefix: isProd ? 'https://developer-portal.w6d.io' : '',
+  // assetPrefix: isProd ? 'https://developer-portal.w6d.io' : '',
+  assetPrefix: isProd ? 'http://localhost:3000' : '',
+
 }

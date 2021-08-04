@@ -1,11 +1,12 @@
 import React from 'react';
 import { TopBarTitle, NavLink } from '@duik/it';
 import { orderReleasesByDate } from '../../utils';
+import Image from 'next/image';
 
 function OwnNavLink({ leftElement, title, rightElement }) {
     return(
         <div className="ownnavlink_container">
-            <img className="ownnavlink_container_img" src={leftElement}/>
+            <img layout='fill' alt={title} className="ownnavlink_container_img" src={leftElement}/>
             <p className="ownnavlink_container_title">{title}</p>
             <p className="ownnavlink_container_span">{rightElement}</p>
         </div>

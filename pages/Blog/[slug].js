@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import marked from 'marked'
 import BlogCategories from '../components/BlogCategories'
-import { sortByValue } from '../../utils'
+import { sortByCategory } from '../../utils'
 import Helmet from 'react-helmet'
 import Layout from '../components/Layout'
 
@@ -14,13 +14,13 @@ export default function PostPage({
     content,
     posts,
 }) {
-    const [value, setValue] = useState('')
-    const sortedPosts = []
-    if (value) {
-        sortedPosts.push(sortByValue(posts, value))
-    } else {
-        sortedPosts.push(posts)
-    }
+    const [categoryFilter, setCategoryFilter] = useState('')
+    const [sortedPosts, setSortedPosts] = useState(posts)
+
+    useEffect(() => {
+        setSortedPosts(sortByCategory(posts, categoryFilter))
+    }, [posts, categoryFilter])
+
     return (
         <Layout>
             <Helmet>
@@ -53,7 +53,7 @@ export default function PostPage({
                     <div className="flex-1">
                         <BlogCategories
                             posts={posts}
-                            changeValue={(value) => setValue(value)}
+                            changeValue={(categoryFilter) => setCategoryFilter(categoryFilter)}
                         />
                     </div>
                 </div>

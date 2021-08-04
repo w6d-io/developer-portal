@@ -1,5 +1,5 @@
 const version = {
-  number: "1.0.0",
+    number: '1.0.1',
 }
 
-export default version;
+export default version

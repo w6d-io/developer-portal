@@ -1,9 +1,10 @@
 import React from 'react'
 import { ContainerVertical } from '@duik/it'
-import { Route, Switch, BrowserRouter } from 'react-router-dom'
+import Helmet from 'react-helmet'
 import Header from './components/Header'
 import Home from './Home'
-import Blog from './Blog'
+import Blog from './blog'
+import Layout from './components/Layout'
 /* Blog as Homepage START */
 import fs from 'fs'
 import path from 'path'
@@ -12,37 +13,47 @@ import { sortByDate } from '../utils'
 import Link from 'next/link'
 /* Blog as Homepage END */
 
-export default function Layout({posts}) {
-  return (
-    <div className="home-container">
-      <Header/>
-      <ContainerVertical>
-        <Blog posts={posts} />
-      </ContainerVertical>
-    </div>
-  )
+export default function IndexPage({ posts }) {
+    return (
+        <>
+            <Helmet>
+                <html lang="en" />
+                <meta
+                    name="description"
+                    content="The best no-code continuous integration platform for your business devOps. Build your visual pipeline and integrate third party apps into your builds and deployment."
+                />
+                <title>
+                    Wildcard Continuous Integration CI/CD Platform Blog
+                </title>
+            </Helmet>
+            <Blog posts={posts} />
+        </>
+    )
 }
 
 /* Blog as Homepage START */
 
 export async function getStaticProps() {
-  const files = fs.readdirSync(path.join('posts'));
-  const posts = files.map(filename => {
-      const slug = filename.replace('.md', '')
-      const markdownWithMeta = fs.readFileSync(path.join('posts', filename), 'utf-8')
-      const { data: frontmatter } = matter(markdownWithMeta)
+    const files = fs.readdirSync(path.join('posts'))
+    const posts = files.map((filename) => {
+        const slug = filename.replace('.md', '')
+        const markdownWithMeta = fs.readFileSync(
+            path.join('posts', filename),
+            'utf-8'
+        )
+        const { data: frontmatter } = matter(markdownWithMeta)
 
-      return {
-          slug,
-          frontmatter,
-      }
-  })
+        return {
+            slug,
+            frontmatter,
+        }
+    })
 
-  return {
-      props: {
-          posts: posts.sort(sortByDate)
-      }
-  }
+    return {
+        props: {
+            posts: posts.sort(sortByDate),
+        },
+    }
 }
 
 /* Blog as Homepage END */

@@ -3,10 +3,9 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import BlogCategories from "./components/BlogCategories";
-import Header from './components/Header'
+import Header from "./components/Header";
 import Link from "next/link";
 import { sortByDate, sortByValue } from "../utils";
-import Image from 'next/image'
 
 export default function Blog({ posts }) {
   const [value, setValue] = useState("");
@@ -30,7 +29,7 @@ export default function Blog({ posts }) {
               <div key={index} className="posts_preview flex flex-row">
                 <div className="flex-0 px-3 w-1/4">
                   <img
-                    layout='fill'
+                    layout="fill"
                     alt={post.frontmatter.title}
                     className="posts_previewimg"
                     src={post.frontmatter.post_logo}

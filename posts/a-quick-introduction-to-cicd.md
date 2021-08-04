@@ -1,12 +1,12 @@
 ---
-title: "A quick introduction to CI/CD."
-date: "July 29 2021"
-reading_time: "5 min read"
-post_logo: "https://w6d-public.s3.eu-west-3.amazonaws.com/pictures/favicon.png"
-preview: "CI/CD is one of the pillars of modern cloud native software development. It improves your software products and makes its development more effective and cheaper This article discusses CI/CD and the different tools you can use to implement it."
-category: "Advanced Techniques"
-app: "CI/CD"
-type: "pipeline"
+title: 'A quick introduction to CI/CD.'
+date: 'July 29 2021'
+reading_time: '5 min read'
+post_logo: '/favicon.png'
+preview: 'CI/CD is one of the pillars of modern cloud native software development. It improves your software products and makes its development more effective and cheaper This article discusses CI/CD and the different tools you can use to implement it.'
+category: 'Advanced Techniques'
+app: 'CI/CD'
+type: 'pipeline'
 ---
 
 CI/CD is one of the pillars of modern cloud native software development. It improves your software products and makes its development more effective and cheaper This article discusses CI/CD and the different tools you can use to implement it.
@@ -23,9 +23,9 @@ In this article, we’ll discuss what CI/CD is and the role it plays in DevOps.
 
 CI/CD stands for continuous integration, continuous delivery, or continuous deployment. Let’s define the scope covered by each of them.
 
-- **Continuous integration**: This covers the development, the integration of parts handled by each developer, and the build of packages and dependencies. Tools such as Version Control Systems (Git) are involved in this step. Depending on the technology you use, you'll be required to use a build tool such as NPM for Javascript. This operation is typically pulling code from the VCS to build it after running unit tests. This is followed by other integration testing depending on your use cases and the applications you are building.
-- **Continuous delivery**: Now that building and testing are automated, we need to have software releases. Releases are what should be deployed to testing, staging, and production servers. Each change (or significant change batches) in your software code should reflect a new release. This process should be also automated and free of any manual overhead. At this level, we evolve the release management techniques to perform planning, scheduling, controlling, and testing builds through different stages and environments. In other words, continuous delivery aims to have ready-to-deploy artifacts on code changes, automatically and continuously.
-- **Continuous deployment**. This is where application releases are deployed on the target environment. Continuous deployment is nothing more than an extension to continuous delivery: It intends to automate deployments based on the steps already done during the continuous delivery process. You can consider the continuous delivery outputs as the continuous deployment input. Some organizations limit automating deployments to testing and staging environments while keeping manual deployments for production and sensitive environments.
+-   **Continuous integration**: This covers the development, the integration of parts handled by each developer, and the build of packages and dependencies. Tools such as Version Control Systems (Git) are involved in this step. Depending on the technology you use, you'll be required to use a build tool such as NPM for Javascript. This operation is typically pulling code from the VCS to build it after running unit tests. This is followed by other integration testing depending on your use cases and the applications you are building.
+-   **Continuous delivery**: Now that building and testing are automated, we need to have software releases. Releases are what should be deployed to testing, staging, and production servers. Each change (or significant change batches) in your software code should reflect a new release. This process should be also automated and free of any manual overhead. At this level, we evolve the release management techniques to perform planning, scheduling, controlling, and testing builds through different stages and environments. In other words, continuous delivery aims to have ready-to-deploy artifacts on code changes, automatically and continuously.
+-   **Continuous deployment**. This is where application releases are deployed on the target environment. Continuous deployment is nothing more than an extension to continuous delivery: It intends to automate deployments based on the steps already done during the continuous delivery process. You can consider the continuous delivery outputs as the continuous deployment input. Some organizations limit automating deployments to testing and staging environments while keeping manual deployments for production and sensitive environments.
 
 ### What is a CI/CD pipeline?
 
@@ -51,10 +51,10 @@ The success of your CI/CD journey is largely dependent on the tools used to impl
 
 Wildcard (w6d) is a no-code, all-in-one, hassle-free platform that makes the deployment of cloud native apps smooth. It ranks higher above its peers because it is secure, easy to use, and has no hidden costs. Some of its features include:
 
-- Polyglotism: By supporting NodeJS, Python, Javascript Framework (React, Angular, VueJS), Golang, Dotnet, and Rust apps, you can build polyglot apps, test and release them with a tiny or no effort.
-- Kubernetes native: Wildcard was built for Kubernetes. It has plug-and-play Kubernetes features that allow developers to deploy their containerized apps to a cluster. The latter can be managed by Wildcard or an on-premises cluster managed by your team.
-- AI-based, ready-to-use CI/CD templates: This powerful feature allows you to create CI/CD pipelines in minutes.
-- This platform is reliable for both minor and major updates.
+-   Polyglotism: By supporting NodeJS, Python, Javascript Framework (React, Angular, VueJS), Golang, Dotnet, and Rust apps, you can build polyglot apps, test and release them with a tiny or no effort.
+-   Kubernetes native: Wildcard was built for Kubernetes. It has plug-and-play Kubernetes features that allow developers to deploy their containerized apps to a cluster. The latter can be managed by Wildcard or an on-premises cluster managed by your team.
+-   AI-based, ready-to-use CI/CD templates: This powerful feature allows you to create CI/CD pipelines in minutes.
+-   This platform is reliable for both minor and major updates.
 
 Try it [here](https://www.w6d.io/) for free!
 
@@ -62,17 +62,17 @@ Try it [here](https://www.w6d.io/) for free!
 
 This is an open-source intuitive build platform that supports continuous delivery. The goal of this tool is to boost teams’ productivity by supporting them throughout the development process.
 
-- Screwdriver supports integration with Github, Docker, Bitbucket, Postgres, and MySQL
-- It is extensible through a plugin system
-- It gives control over your Kubernetes clusters
+-   Screwdriver supports integration with Github, Docker, Bitbucket, Postgres, and MySQL
+-   It is extensible through a plugin system
+-   It gives control over your Kubernetes clusters
 
 ### Jenkins
 
 This is an open-source Java-based CI/CD tool. It supports the building and deployment of software and also allows for the automation of the whole process. Some of its features include:
 
-- It has many plugins to support the build and deployment process
-- It has scheduling features
-- It is easy to install and use
+-   It has many plugins to support the build and deployment process
+-   It has scheduling features
+-   It is easy to install and use
 
 This tool is best when you have complex software with major updates to be made by a team of developers.
 
@@ -80,9 +80,9 @@ This tool is best when you have complex software with major updates to be made b
 
 GoCD, another open-source end-to-end workflow visualization tool. It helps users visualize the entire development process in a single view. Below are some of the GoCD features:
 
-- It integrates with other external tools via extensible plugins
-- It streamlines CD workflow on popular cloud environments such as Kubernetes and AWS.
-- It supports modeling complex CD workflows
+-   It integrates with other external tools via extensible plugins
+-   It streamlines CD workflow on popular cloud environments such as Kubernetes and AWS.
+-   It supports modeling complex CD workflows
 
 ## Summary
 

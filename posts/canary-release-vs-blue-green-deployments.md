@@ -10,19 +10,19 @@ app: 'CI/CD'
 type: 'pipeline'
 ---
 
-Choosing the right deployment strategy is crucial to the availability and quality of your services.  Two of the most known deployment strategies are blue/green deployment and canary release. 
+Choosing the right deployment strategy is crucial to the availability and quality of your services. Two of the most known deployment strategies are blue/green deployment and canary release.
 
 This article discusses both deployment strategies. It explores the differences between the two, the pros and cons of each one, and finally the best use case for each of them.
 
-Downtimes when updating applications have now become a concept of the past. Users expect the introduction of new application versions to be a seamless process that doesn’t interrupt their experience. Canary release and blue-green deployment strategies both overcome the possibility of updates’ related downtime problems. 
+Downtimes when updating applications have now become a concept of the past. Users expect the introduction of new application versions to be a seamless process that doesn’t interrupt their experience. Canary release and blue-green deployment strategies both overcome the possibility of updates’ related downtime problems.
 
-In this article, we’ll discuss each strategy’s approach to the upgrade process, its strengths,  shortcomings, and best use cases.
+In this article, we’ll discuss each strategy’s approach to the upgrade process, its strengths, shortcomings, and best use cases.
 
 ## What is Canary Release?
 
-Canary release is a deployment rollout strategy that aims at minimizing new software risks by directing a small percentage of users to the new version of the application. After verifying that the new application works as intended, the traffic directed to it is gradually increased and eventually, all traffic is directed to it. 
+Canary release is a deployment rollout strategy that aims at minimizing new software risks by directing a small percentage of users to the new version of the application. After verifying that the new application works as intended, the traffic directed to it is gradually increased and eventually, all traffic is directed to it.
 
-In case an issue is detected at any point throughout the deployment, a rollback is performed with ease because both the current and the new versions are in the production environment. 
+In case an issue is detected at any point throughout the deployment, a rollback is performed with ease because both the current and the new versions are in the production environment.
 
 ![How canary release works](/canary.png)
 

@@ -1,21 +1,21 @@
 ---
-title: 'A quick introduction to CI/CD.'
-date: 'July 29 2021'
-reading_time: '5 min read'
-post_logo: 'https://w6d-public.s3.eu-west-3.amazonaws.com/pictures/favicon.png'
-preview: 'CI/CD is one of the pillars of modern cloud native software development. It improves your software products and makes its development more effective and cheaper This article discusses CI/CD and the different tools you can use to implement it.'
-category: 'Advanced Techniques'
-app: 'CI/CD'
-type: 'pipeline'
+title: "A quick introduction to CI/CD."
+date: "July 29 2021"
+reading_time: "5 min read"
+post_logo: "https://w6d-public.s3.eu-west-3.amazonaws.com/pictures/favicon.png"
+preview: "CI/CD is one of the pillars of modern cloud native software development. It improves your software products and makes its development more effective and cheaper This article discusses CI/CD and the different tools you can use to implement it."
+category: "Advanced Techniques"
+app: "CI/CD"
+type: "pipeline"
 ---
 
 CI/CD is one of the pillars of modern cloud native software development. It improves your software products and makes its development more effective and cheaper This article discusses CI/CD and the different tools you can use to implement it.
 
 ---
 
-The process of software development and deployment has been more efficient by the rise in automated development workflows. This efficiency translates into a better user experience, lower cost of development, and higher-level quality. 
+The process of software development and deployment has been more efficient by the rise in automated development workflows. This efficiency translates into a better user experience, lower cost of development, and higher-level quality.
 
-Iterative software development and testing are some of the ingredients of such success. Facebook, for example, releases 100 million lines of code daily. In order to achieve this, creating an effective CI/CD pipeline that doesn't require a manual overhead to deliver commits and hotfixes, is required. 
+Iterative software development and testing are some of the ingredients of such success. Facebook, for example, releases 100 million lines of code daily. In order to achieve this, creating an effective CI/CD pipeline that doesn't require a manual overhead to deliver commits and hotfixes, is required.
 
 In this article, we’ll discuss what CI/CD is and the role it plays in DevOps.
 
@@ -60,10 +60,10 @@ Try it [here](https://www.w6d.io/) for free!
 
 ### Screwdriver
 
-This is an open-source intuitive build platform that supports continuous delivery. The goal of this tool is to boost teams’ productivity by supporting them throughout the development process. 
+This is an open-source intuitive build platform that supports continuous delivery. The goal of this tool is to boost teams’ productivity by supporting them throughout the development process.
 
 - Screwdriver supports integration with Github, Docker, Bitbucket, Postgres, and MySQL
-- It is extensible through a  plugin system
+- It is extensible through a plugin system
 - It gives control over your Kubernetes clusters
 
 ### Jenkins

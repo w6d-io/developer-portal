@@ -1,5 +1,5 @@
 const version = {
-    number: '1.0.2',
+    number: '1.0.3',
 }
 
 export default version

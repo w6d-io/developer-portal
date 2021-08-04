@@ -3,7 +3,7 @@ import { ContainerVertical } from '@duik/it'
 import Helmet from 'react-helmet'
 import Header from './components/Header'
 import Home from './Home'
-import Blog from './blog'
+import Blog from './blog/index'
 import Layout from './components/Layout'
 /* Blog as Homepage START */
 import fs from 'fs'

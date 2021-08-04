@@ -2,7 +2,7 @@
 title: 'Canary Release vs Blue-Green Deployments.'
 date: 'July 30 2021'
 reading_time: '3 min read'
-post_logo: 'https://media-exp1.licdn.com/dms/image/C4D0BAQHca9scvFTn_g/company-logo_200_200/0/1575039115252?e=2159024400&v=beta&t=lhQfV9RKT_iydx97uugwZtvsL_zgPoTU_fxFC11nkaI'
+post_logo: 'https://w6d-public.s3.eu-west-3.amazonaws.com/pictures/favicon.png'
 preview: 'Choosing the right deployment strategy is crucial to the availability and quality of your services.  Two of the most known deployment strategies are blue/green deployment and canary release.
 This article discusses both deployment strategies. It explores the differences between the two, the pros and cons of each one, and finally the best use case for each of them.'
 category: 'Advanced Techniques'

@@ -16,7 +16,10 @@ export default function Header() {
             <TopBar className="box">
                 <TopBarSection>
                     <TopBarTitle>
-                        <TopBarLink href="/"><Avatar imgUrl="/logo.png" name={<h2><b>Wildcard</b><b className="header-secondary">portal</b></h2>} pill={<span>O</span>} /></TopBarLink>
+                        <TopBarLink href="/" className="flex flex-row items-center">
+                            <img style={{width: "30px", height: "30px"}} alt="Wildcard" src="/logo.png"/>
+                            <h2 className="mb-4 ml-4"><b>Wildcard</b><b className="header-secondary">portal</b></h2>
+                        </TopBarLink>
                     </TopBarTitle>
                 </TopBarSection>
                 <TopBarSection className="menu">

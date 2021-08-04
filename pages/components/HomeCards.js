@@ -1,6 +1,7 @@
 import React from 'react';
 import { IoAlbumsOutline } from "react-icons/io5";
 import { HiOutlineArrowNarrowRight } from "react-icons/hi";
+import Image from 'next/image'
 
 const cardsDatas = [
     {
@@ -28,7 +29,7 @@ const cardsDatas = [
 function Card(props) {
     return (
         <div className="homecards-card">
-            <img src={props.icon} />
+            <img layout='fill' alt={props.title} src={props.icon} />
             <p className="homecards-cardtitle">{props.title}</p>
             <span className="homecards-cardcaption">{props.caption}</span>
             <span className="homecards-seemore">See more <HiOutlineArrowNarrowRight /></span>

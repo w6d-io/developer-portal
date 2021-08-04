@@ -1,10 +1,10 @@
 import React from 'react'
 import { ContainerVertical } from '@duik/it'
 import '@duik/it/dist/styles.css'
-import Header from './components/Header'
-import SearchBar from './components/SearchBar'
-import PopularTags from './components/PopularTags'
-import HomeCards from './components/HomeCards'
+import Header from '../components/Header'
+import SearchBar from '../components/SearchBar'
+import PopularTags from '../components/PopularTags'
+import HomeCards from '../components/HomeCards'
 
 export default function Home() {
     return (

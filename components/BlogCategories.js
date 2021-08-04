@@ -1,6 +1,6 @@
 import React from "react";
 import { TopBarTitle, NavLink } from "@duik/it";
-import { orderReleasesByDate } from "../../utils";
+import { orderReleasesByDate } from "../utils";
 
 function OwnNavLink({ leftElement, title, rightElement }) {
   return (

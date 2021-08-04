@@ -3,10 +3,10 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import marked from 'marked'
-import BlogCategories from '../components/BlogCategories'
+import BlogCategories from '../../components/BlogCategories'
 import { sortByCategory } from '../../utils'
 import Helmet from 'react-helmet'
-import Layout from '../components/Layout'
+import Layout from '../../components/Layout'
 
 export default function PostPage({
     frontmatter: { title, date, reading_time },

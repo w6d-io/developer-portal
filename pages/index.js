@@ -1,10 +1,10 @@
 import React from 'react'
 import { ContainerVertical } from '@duik/it'
 import Helmet from 'react-helmet'
-import Header from './components/Header'
+import Header from '../components/Header'
 import Home from './Home'
-import BlogPosts from './components/BlogPosts'
-import Layout from './components/Layout'
+import BlogPosts from '../components/BlogPosts'
+import Layout from '../components/Layout'
 /* Blog as Homepage START */
 import fs from 'fs'
 import path from 'path'

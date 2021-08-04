@@ -3,7 +3,7 @@ import { ContainerVertical } from '@duik/it'
 import Helmet from 'react-helmet'
 import Header from './components/Header'
 import Home from './Home'
-import Blog from './blog/index'
+import BlogPosts from './components/BlogPosts'
 import Layout from './components/Layout'
 /* Blog as Homepage START */
 import fs from 'fs'
@@ -26,7 +26,7 @@ export default function IndexPage({ posts }) {
                     Wildcard Continuous Integration CI/CD Platform Blog
                 </title>
             </Helmet>
-            <Blog posts={posts} />
+            <BlogPosts posts={posts} />
         </>
     )
 }

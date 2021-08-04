@@ -6,17 +6,15 @@ export const orderReleasesByDate = (a, b) => {
     return new Date(b.date) - new Date(a.date)
 }
 
-export const sortByValue = (array, value) => {
-    const posts = [];
-    if (value != 'All') { 
-        array.map(post => {
-            if (post.frontmatter.category == value)
-                posts.push(post)
+export const sortByCategory = (posts, category) => {
+    const _posts = [];
+    if (category != 'All') { 
+        posts.map(post => {
+            if (post.frontmatter.category == category)
+                _posts.push(post)
         })
     } else {
-        array.map(post => {
-            posts.push(post)
-        })
+        return posts
     }
-    return posts;
+    return _posts;
 }

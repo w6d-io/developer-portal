@@ -42,9 +42,9 @@ How blue-green deployment works
 
 There are several differences between these two strategies in how they approach the deployment process. These are the most important ones:
 
--                                             In blue-green deployment, a second identical production environment needs to be created but the canary release works on the existing one.
--                                             Secondly, unlike the canary release blue-green deployment allows for unlimited testing in the production environment.
--                                             With the canary release, you can target a specific subset of users randomly or using a set criterion. This is not possible with a blue-green deployment strategy.
+-   In blue-green deployment, a second identical production environment needs to be created but the canary release works on the existing one.
+-   Secondly, unlike the canary release blue-green deployment allows for unlimited testing in the production environment.
+-   With the canary release, you can target a specific subset of users randomly or using a set criterion. This is not possible with a blue-green deployment strategy.
 
 ## **Blue-Green Deployment Pros and Cons**
 

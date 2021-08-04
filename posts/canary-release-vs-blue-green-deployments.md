@@ -24,7 +24,7 @@ Canary release is a deployment rollout strategy that aims at minimizing new soft
 
 In case an issue is detected at any point throughout the deployment, a rollback is performed with ease because both the current and the new versions are in the production environment. 
 
-![How canary release works](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/628dd956-2a2f-4346-9327-ba5b64b3e739/Canary_Release.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210730%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210730T141524Z&X-Amz-Expires=86400&X-Amz-Signature=4b60b26a629997cf84e46e47f78b93beb6c2c247c324e58649faaf3d84c44e28&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Canary_Release.png%22)
+![How canary release works](/canary.png)
 
 How canary release works
 
@@ -34,7 +34,7 @@ Blue-Green Deployment is a deployment strategy aimed at minimizing the chance fo
 
 This strategy allows developers to thoroughly test the new version in a production environment before gradually directing user traffic to it. After the migration of user traffic is complete, the old version is kept intact in case there is a need for rollback or disaster recovery.
 
-![How blue-green deployment works](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/53c56e4c-30cf-4939-906d-75e7354ab0f8/Blue-green_deployment_before__after_cutover.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210730%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210730T141621Z&X-Amz-Expires=86400&X-Amz-Signature=3a8da09694468f4e04c30e5d69673670458581140e39e1b516fcf24f11d84ce4&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22Blue-green_deployment_before__after_cutover.png%22)
+![How blue-green deployment works](/bluegreen.png)
 
 How blue-green deployment works
 

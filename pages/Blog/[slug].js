@@ -6,6 +6,7 @@ import marked from 'marked';
 import BlogCategories from '../components/BlogCategories'
 import Header from '../components/Header'
 import { sortByValue } from '../../utils'
+import Helmet from "react-helmet";
 
 export default function PostPage({ frontmatter: {title, date, reading_time}, slug, content, posts }) {
     const [value, setValue] = useState("");
@@ -16,19 +17,27 @@ export default function PostPage({ frontmatter: {title, date, reading_time}, slu
         sortedPosts.push(posts)
     }
     return (
-        <div className="home-container">
+        <div>
+            <Helmet>
+            <meta
+              name="description"
+              content={content.length > 100 ? `${content.substring(0, 100)}...`: content}
+            />
             <title>{title} - Wildcard Portal</title>
+            </Helmet>
             <Header />
-            <div className="blog_container">
-                <div>
-                    <h1 className="post_container_title">{title}</h1>
-                    <p>{date} • {reading_time}</p>
-                    <div className="post_container">
-                        <div className="test" dangerouslySetInnerHTML={{__html: marked(content)}}></div>
+            <div className="home-container flex flex-1 justify-center">
+                <div className="flex flex-col lg:flex-row p-5 max-w-screen-xl">
+                    <div className="flex-2 px-5">
+                        <h1 className="post_container_title">{title}</h1>
+                        <p>{date} • {reading_time}</p>
+                        <div className="post_container">
+                            <div className="markdown_content" dangerouslySetInnerHTML={{__html: marked(content)}}></div>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <BlogCategories posts={posts} changeValue={value => setValue(value)}/>
+                    <div className="flex-1">
+                        <BlogCategories posts={posts} changeValue={value => setValue(value)}/>
+                    </div>
                 </div>
             </div>
         </div>

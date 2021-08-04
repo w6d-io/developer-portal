@@ -1,9 +1,10 @@
 import React from 'react'
 import { ContainerVertical } from '@duik/it'
-import { Route, Switch, BrowserRouter } from 'react-router-dom'
+import Helmet from 'react-helmet'
 import Header from './components/Header'
 import Home from './Home'
 import Blog from './blog'
+import Layout from './components/Layout'
 /* Blog as Homepage START */
 import fs from 'fs'
 import path from 'path'
@@ -12,14 +13,21 @@ import { sortByDate } from '../utils'
 import Link from 'next/link'
 /* Blog as Homepage END */
 
-export default function Layout({ posts }) {
+export default function IndexPage({ posts }) {
     return (
-        <div className="home-container">
-            <Header />
-            <ContainerVertical>
-                <Blog posts={posts} />
-            </ContainerVertical>
-        </div>
+        <>
+            <Helmet>
+                <html lang="en" />
+                <meta
+                    name="description"
+                    content="The best no-code continuous integration platform for your business devOps. Build your visual pipeline and integrate third party apps into your builds and deployment."
+                />
+                <title>
+                    Wildcard Continuous Integration CI/CD Platform Blog
+                </title>
+            </Helmet>
+            <Blog posts={posts} />
+        </>
     )
 }
 

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Layout from './Layout'
 import Link from 'next/link'
 import BlogCategories from './BlogCategories'
+import { sortByCategory } from '../../utils'
 
 export default function BlogPosts({ posts }) {
     const [categoryFilter, setCategoryFilter] = useState('')

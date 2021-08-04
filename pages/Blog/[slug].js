@@ -18,7 +18,9 @@ export default function PostPage({
     const [sortedPosts, setSortedPosts] = useState(posts)
 
     useEffect(() => {
-        setSortedPosts(sortByCategory(posts, categoryFilter))
+        if (categoryFilter) {
+            setSortedPosts(sortByCategory(posts, categoryFilter))
+        }
     }, [posts, categoryFilter])
 
     return (
@@ -53,7 +55,9 @@ export default function PostPage({
                     <div className="flex-1">
                         <BlogCategories
                             posts={posts}
-                            changeValue={(categoryFilter) => setCategoryFilter(categoryFilter)}
+                            changeValue={(categoryFilter) =>
+                                setCategoryFilter(categoryFilter)
+                            }
                         />
                     </div>
                 </div>

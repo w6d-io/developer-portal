@@ -9,14 +9,14 @@ module.exports = {
     // assetPrefix: isProd ? 'http://localhost:3000' : '',
 }
 
-module.exports = {
-    exportPathMap: async function (
-        defaultPathMap,
-        { dev, dir, outDir, distDir, buildId }
-    ) {
-        return {
-            '/': { page: '/' },
-            '/blog': { page: '/blog' },
-        }
-    },
-}
+// module.exports = {
+//     exportPathMap: async function (
+//         defaultPathMap,
+//         { dev, dir, outDir, distDir, buildId }
+//     ) {
+//         return {
+//             '/': { page: '/' },
+//             '/blog': { page: '/blog' },
+//         }
+//     },
+// }

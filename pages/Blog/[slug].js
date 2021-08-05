@@ -7,6 +7,7 @@ import BlogCategories from '../../components/BlogCategories'
 import { sortByCategory } from '../../utils'
 import Helmet from 'react-helmet'
 import Layout from '../../components/Layout'
+import { useRouter } from 'next/router'
 
 export default function PostPage({
     frontmatter: { title, date, reading_time },
@@ -22,6 +23,14 @@ export default function PostPage({
             setSortedPosts(sortByCategory(posts, categoryFilter))
         }
     }, [posts, categoryFilter])
+
+    const router = useRouter()
+
+    // If the page is not yet generated, this will be displayed
+    // initially until getStaticProps() finishes running
+    if (router.isFallback) {
+        return <div>Loading...</div>
+    }
 
     return (
         <Layout>

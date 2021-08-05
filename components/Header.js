@@ -15,7 +15,7 @@ export default function Header() {
     const menuLinks = [
         {
             title: 'Blog',
-            to: 'about',
+            to: 'blog',
         },
     ]
 
